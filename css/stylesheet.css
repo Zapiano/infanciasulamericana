@@ -109,6 +109,7 @@ li {
 
 
 
+
 /* Header */
 .header {
   padding: 30px 10px;
@@ -139,12 +140,16 @@ li {
   font-size: 15px;
   padding: 5px 7px;
   text-decoration: none;
-  color: green;
   color: #FFF056;
   display: inline-block;
 }
 
 .header__links a:hover {
+  background-color: #FFF056;
+  color: #191919;
+}
+
+.header__links .selected-link {
   background-color: #FFF056;
   color: #191919;
 }
