@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <!-- HTML 4 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <%= bootstrap %>
+    <%= bootstrap_css %>
+    <%= bootstrap_js %>
+    <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <!-- HTML5 -->
+    <meta charset="utf-8"/>
+    <title>Infancias Sulamericanas</title>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header__title">
+        <h1>Seminário Internacional<br class="hide-sm" /> Infâncias Sulamericanas:<br/><span>Crianças nas cidades, políticas <br class="hide-sm" /> e participação</span></h1>
+      </div>
+      <div class=header__links>
+        <a class="<%= 'selected-link' if @page == 'index'%>" href="/">Início</a>
+        <a class="<%= 'selected-link' if @page == 'team'%>" href="/equipe">Equipe</a>
+        <a class="<%= 'selected-link' if @page == 'schedule'%>"href="/programacao">Programação</a>
+        <a class="<%= 'selected-link' if @page == 'registrations'%>"href="/inscricoes">Inscrições</a>
+        <a class="<%= 'selected-link' if @page == 'contact'%>"href="/contato">Contato</a>
+      </div>
+    </div>
+    <%= yield %>
+    <div class="footer"></div>
+  </body>
+</html>
