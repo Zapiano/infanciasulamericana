@@ -164,3 +164,64 @@ li {
   color: #191919;
 }
 
+
+
+
+/* Forms */
+.form-section {
+  margin-bottom: 60px;
+}
+
+form input[type="text"] {
+  border: 1px solid gray;
+  padding: 8px;
+  width: 100%;
+}
+
+form label {
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+form input.abstract_file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+input.abstract_file + label {
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #FFF056;
+  color: #191919;
+}
+
+input.abstract_file:focus + label,
+input.abstract_file + label:hover {
+  background-color: #FEE940;
+  color: #191919;
+}
+
+form input[type="submit"] {
+  font-size: 16px;
+  padding: 10px 15px;
+  border: none;
+  color: #191919;
+  display: inline-block;
+  border-radius: 0;
+  width: 100%;
+}
+
+form input[type="submit"]:hover {
+  background-color: gray;
+  color: #191919;
+}
+
+form input[type="text"].has-error {
+  border-color: #bd0000;
+}

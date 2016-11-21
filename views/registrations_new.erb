@@ -1,0 +1,265 @@
+<div class="main">
+  <div class="container">
+    <h2>Formulário de Inscrição</h2>
+    <form id="new_registration" method="post" enctype="multipart/form-data">
+      <div class="form-section">
+        <h3>Dados da Inscrição</h3>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Modalidade:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='registration[modality]'></input>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Data de inscrição:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='registration[date]'></input>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Dados Pessoais</h3>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <label>CPF:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='personal[cpf]'></input>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>RG:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='personal[rg]'></input>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Naturalidade:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='personal[nationality]'></input>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Nome:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='personal[name]'></input>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Nome para crachá:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='personal[badge_name]'></input>
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Instituição para crachá:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type='text' name='personal[badge_institution]'></input>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Formação</h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Titulação mais alta:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="formation[titulation]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Curso de titulação:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="formation[course]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Instituição de titulação:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="formation[institution]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Ano de titulação:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="formation[year]">
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Atuação Profissional</h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Situação Profissional:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="professional[situation]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Filiação institucional:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="professional[filiation]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Função institucional/Cargo:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="professional[function]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Áreas de atuação:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="professional[areas]">
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Endereço</h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Logradouro:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="address[street]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Bairro:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="address[neighborhood]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Município / UF:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="address[uf]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>CEP:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="address[cep]">
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Contato</h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>E-mail:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="contact[email]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Telefone:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="contact[phone]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Celular:</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="contact[mobile]">
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <h3>Submeter trabalho</h3>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Eixo temático</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="abstract[theme]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Palavras-chave</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input type="text" name="abstract[keywords]">
+          </div>
+        </div>
+        <br/>
+        <div class="row">
+          <div class="col-xs-12">
+            <label>Anexar resumo (formatos: *.doc, *.docx)</label>
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-6">
+            <input id="file" class="abstract_file" type="file" name="abstract_file">
+            <label for="file">Clique aqui para selecionar um arquivo</label>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <input type="submit" value="Enviar">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script type="text/javascript" src="javascript/form_validation.js"></script>
