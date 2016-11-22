@@ -39,6 +39,12 @@ get '/equipe' do
   erb :team
 end
 
+get '/cidade' do
+  @page = 'city'
+
+  erb :city
+end
+
 get '/inscricoes' do
   @page = 'registrations'
 
