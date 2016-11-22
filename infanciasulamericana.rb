@@ -60,12 +60,14 @@ end
 post '/nova-inscricao' do
   @page = 'registrations'
   if params["abstract_file"].present?
+    registration_number = rand(100000000).to_s;
 
-    File.open('uploads/' + params["abstract_file"][:filename], "w") do |f|
+    File.open('uploads/' + registration_number + " " + params["personal"]["name"] + " - " + params["abstract_file"][:filename], "w") do |f|
       f.write(params["abstract_file"][:tempfile].read)
     end
 
     email_body = "Dados de Inscrição\n"\
+		 "Número de Inscrição: #{registration_number}\n"\
                  "Modalidade: #{params['registration']['modality']}\n"\
                  "Data de inscrição: #{params['registration']['date']}\n"\
                  "\nDados Pessoais\n"\
@@ -101,7 +103,7 @@ post '/nova-inscricao' do
     Pony.options = {
       :subject => "Nova inscrição!",
       :body => email_body,
-      :attachments => {params["abstract_file"][:filename] => File.read("uploads/" + params['abstract_file'][:filename])},
+      :attachments => {params["abstract_file"][:filename] => File.read('uploads/' + registration_number + " " + params["personal"]["name"] + " - " +  params["abstract_file"][:filename])},
       :via => :smtp,
       :via_options => {
         :address              => "smtp.gmail.com",
@@ -115,7 +117,12 @@ post '/nova-inscricao' do
       }
     }
 
-    Pony.mail(:to => "2pedro8@gmail.com; vitors.hirata@gmail.com")
+
+    File.open('uploads/' + registration_number + " " + params["personal"]["name"] + ".txt", "w") do |f|
+      f.write(email_body)
+    end
+
+    Pony.mail(:to => "2pedro8@gmail.com; infanciasulamericana@usp.br")
 
     erb :registration_success
   else
