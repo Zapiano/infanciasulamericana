@@ -98,13 +98,14 @@ post '/nova-inscricao' do
       :attachments => {params["abstract_file"][:filename] => File.read("uploads/" + params['abstract_file'][:filename])},
       :via => :smtp,
       :via_options => {
-        :address              => 'smtp.gmail.com',
-        :port                 => '587',
+        :address              => "smtp.gmail.com",
+        :port                 => "465",
         :enable_starttls_auto => true,
+	:ssl                  => true,
         :user_name            => ENV["SMTP_USER"],
         :password             => ENV["APP_PASSWORD"],
         :authentication       => :plain,
-        :domain               => "localhost.localdomain"
+	:domain		      => "localhost.localdomain"
       }
     }
 
