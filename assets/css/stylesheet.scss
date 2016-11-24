@@ -102,7 +102,7 @@ hr {
 
 .container {
   margin: 0 auto;
-  max-width: 260px;
+  max-width: 300px;
 }
 @media(min-width: 768px) {
   .container {
@@ -125,9 +125,16 @@ hr {
 
 /* Header */
 .header {
-  padding: 30px 10px;
+  padding: 0px 0px;
   text-align: center;
   background-color: #191919;
+}
+
+.header__title {
+  height: 242px;
+  background-image: url('/files/logo_mobile.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .header__title span {
@@ -135,6 +142,12 @@ hr {
   margin-top: 10px;
 }
 @media(min-width: 768px) {
+  .header__title {
+    height: 242px;
+    background-image: url('/files/logo.jpg');
+    background-size: auto;
+  }
+
   .header__title span {
     font-size: 18px;
     margin-top: 5px;
@@ -146,7 +159,8 @@ hr {
   }
 }
 .header__links{
-  margin-top: 30px;
+  padding-top: 10px;
+  padding-bottom: 17px;
 }
 
 .header__links a {
@@ -165,6 +179,13 @@ hr {
 .header__links .selected-link {
   background-color: #FFF056;
   color: #191919;
+}
+
+@media(min-width: 768px) {
+  .header__links {
+    padding-top: 25px;
+    padding-bottom: 22px;
+  }
 }
 
 
