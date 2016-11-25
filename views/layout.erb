@@ -6,6 +6,7 @@
     <%= bootstrap_css %>
     <%= bootstrap_js %>
     <link rel="stylesheet" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
     <!-- HTML5 -->
     <meta charset="utf-8"/>
     <title>Infancias Sulamericanas</title>
@@ -14,7 +15,7 @@
   <body>
     <div class="header">
       <div class="header__title">
-
+        <h1><span class='title__main'>Seminário Internacional Infâncias Sulamericanas</span> <br/><span class='title__secondary'> Crianças nas Cidadaes, Políticas e Participação</span></h1>
       </div>
       <div class=header__links>
         <a class="<%= 'selected-link' if @page == 'index'%>" href="/">Início</a>
@@ -26,6 +27,23 @@
       </div>
     </div>
     <%= yield %>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="logos">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3">
+            <img id="logo_usp" class="footer__logo" src="/files/logos/usp.png"/>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <img id="logo_capes" class="footer__logo" src="/files/logos/capes.png"/>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <img id="logo_cscy" class="footer__logo" src="/files/logos/cscy.jpg"/>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <img id="logo_feusp" class="footer__logo" src="/files/logos/feusp.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
