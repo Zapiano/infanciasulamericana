@@ -156,6 +156,10 @@ h1 .title__secondary {
 }
 
 @media(min-width: 1280px) {
+  .header__title {
+    height: 240px;
+  }
+
   h1 .title__main {
     font-size: 24px;
   }
