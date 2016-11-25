@@ -171,7 +171,7 @@ h1 .title__secondary {
 
 .header__links{
   padding-top: 10px;
-  padding-bottom: 17px;
+  padding-bottom: 3px;
 }
 
 .header__links a {
@@ -194,8 +194,15 @@ h1 .title__secondary {
 
 @media(min-width: 768px) {
   .header__links {
-    padding-top: 25px;
-    padding-bottom: 22px;
+    padding-top: 7px;
+    padding-bottom: 12px;
+  }
+}
+
+@media(min-width: 768px) {
+  .header__links {
+    padding-top: 10px;
+    padding-bottom: 12px;
   }
 }
 
