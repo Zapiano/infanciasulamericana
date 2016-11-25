@@ -112,6 +112,18 @@ hr {
   }
 }
 
+.container {
+  min-height: 640px;
+}
+
+@media (min-width: 768px) {
+  min-height: 1024px;
+}
+
+@media (min-width) {
+  min-height: 600px;
+}
+
 
 
 
@@ -287,33 +299,69 @@ form input[type="text"].has-error {
 //
 
 .footer {
+  position: relative;
+  bottom: 0;
   width: 100%;
-  padding: 20px 0;
+  padding: 5px 0;
   background-color: black;
 }
 
 .footer__logo {
-  width: 50%;
+  width: 40%;
   display: block;
   margin: 20px auto;
 }
 
-#logo_usp {
-  background-color: white;
-}
 
 @media (min-width: 768px) {
   .footer {
-    padding: 20px 50px;
+    padding: 5px 50px;
   }
 
   .footer__logo {
-    width: 90%;
+    width: 65%;
   }
 }
 
 @media (min-width: 1280px) {
   .footer {
-    padding: 20px 300px;
+    padding: 10px 300px;
+  }
+}
+
+#logo_usp {
+  background-color: white;
+  width: 35%;
+}
+
+#logo_feusp {
+  background-color: white;
+}
+
+#logo_capes {
+  background-color: white;
+}
+
+@media (min-width: 768px){
+  #logo_usp {
+    width: 60%;
+  }
+
+  #logo_feusp {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1280px){
+  #logo_feusp {
+    width: 60%;
+  }
+
+  #logo_usp {
+    width: 45%;
+  }
+
+  #logo_capes {
+    width: 50%;
   }
 }
