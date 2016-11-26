@@ -143,7 +143,8 @@ hr {
   height: 145px;
   background-image: url('/files/logo_bg.png');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: auto;
+  background-position: -65px 0;
   position: relative;
 }
 
@@ -163,7 +164,9 @@ h1 .title__secondary {
   }
 
   .header__title {
+  background-size: auto 100%;
     background-size: 100%;
+    background-position: 0 0;
   }
 }
 
@@ -342,12 +345,20 @@ form input[type="text"].has-error {
   background-color: white;
 }
 
+#logo_cscy {
+  width: 50%;
+}
+
 @media (min-width: 768px){
   #logo_usp {
     width: 60%;
   }
 
   #logo_feusp {
+    width: 80%;
+  }
+
+  #logo_cscy {
     width: 80%;
   }
 }
